@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme{
+  --color-primary:#0a7c3e;
+
+  --color-green: #26df81;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color:#666;
+}
+p,li{
+  line-height:1.4;
+}
+
+.header nav a{
+  @apply text-[#0a7c3e];
+  padding:2px 10px 5px;
+}
+.header nav a:hover,
+.header nav a.active{
+  @apply text-[#fff] bg-[#0a7c3e] rounded-[20px];
+}
+
+.slider .image-blk{
+  @apply block relative rounded-[20px] z-2 ;
+  background-image:url("./images/image1.jpg");
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+}
+.image-wrapper{
+  animation: rotate_image 10s infinite linear;
+  transform-style: preserve-3d;
+}
+@keyframes rotate_image {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.image-border{
+  @apply   relative block w-[100%] h-[110%] bg-green/70 mt-[-452px] z-1;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.button-wrapper .button{
+  @apply rounded-[20px] px-5 py-2 mr-[10px] cursor-pointer;
+  box-shadow: 4px 5px 12px #353736;
+}
+
+.primary-button{
+  @apply bg-[#07ba58];
+}
+.secondary-button{
+  @apply bg-[#dbb10c];
+}
+
+
+/*About*/
+.info-box-wrapper .info-box{
+  @apply  relative flex flex-col w-[150px] h-[170px] px-5  items-center rounded-[15px] text-center;
+  background-color:rgb(255 255 255/ 20%);
+  backdrop-filter: blur(6px);
+  box-shadow: 0px 3px 11px #c3c2b6;
+}
+.info-box-wrapper .info-box h4{
+  @apply  text-primary mt-15 font-[600];
+}
+.info-box-wrapper .info-box {
+}
+.about-sec-imgblk{
+  background-image: url("/images/face.jpg");
+  background-size: cover;
+  border-radius:0 30% 0 30%;
+  box-shadow:1px 16px 33px #78770b;
+}

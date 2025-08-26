@@ -1,0 +1,31 @@
+{
+    "challenges":{
+        "title": "Challenges We Aim to Address",
+        "list":[
+            {
+                "icon": "home.png",
+                "label" : "Independent Living"
+            },
+            {
+                "icon": "home.png",
+                "label" : "Employment"
+            },
+            {
+                "icon": "home.png",
+                "label" : "Social Participation"
+            },
+            {
+                "icon": "home.png",
+                "label" : "Transition Planning"
+            },
+            {
+                "icon": "home.png",
+                "label" : "Family Support"
+            },
+            {
+                "icon": "home.png",
+                "label" : "Community Awareness and Inclusion"
+            }
+        ]
+    }
+}

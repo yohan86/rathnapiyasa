@@ -1,0 +1,25 @@
+{
+    "aboutInitiative":{
+        "title": "About Our Initiative",
+        "description": 
+        "We will focus on young adulthood typically refers to the age range of 18 to 25 with Down Syndrome and intellectual disabilities but this classification can vary depending on the demand and requirement. We may extend the upper limit to 30 or even 35. We will prioritize young people from marginalized communities and those facing socio-economic challenges.",
+        "cards":[
+            {
+                "title": "Age Group",
+                "description": "19-90 years"
+            },
+            {
+                "title": "Focus",
+                "description": "Down syndrome & intellectual disabillities"
+            },
+            {
+                "title": "Priority",
+                "description": "Marginalized & social economic challenges"
+            }
+        ],
+        "image" : "",
+        "sectionTitle": "Down Syndrome & Intellectual Disabilities",
+        "sectionDescription": "Many young adults with down syndrome and intellectual disabilities express a desire for greater independence but may require more support than their peers to achieve it."
+
+    }
+}
