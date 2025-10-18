@@ -96,6 +96,7 @@ ul{
   @apply absolute w-[100px] h-[85px] md:w-[200px] md:h-[150px] bg-no-repeat bg-size-[100%_auto] opacity-50 z-[-1];
 }
 
+/* mobile first style follow but below is only mobile related  */
 @media (max-width: 767px) {
   /*mobile*/
   .header .menu-wrapper{
@@ -107,11 +108,27 @@ ul{
   }
   .header .menu-wrapper.active .main-menu{
     @apply  max-h-[400px] opacity-100;
-
+  }
+  .header .menu-wrapper.active .main-menu a.active{
+    @apply  mr-[8px];
   }
   .header .menu-wrapper .toggle-menu{
-    @apply flex flex-row absolute top-[-40px] right-2 w-[72px]  cursor-pointer uppercase md:hidden;
+    @apply flex flex-row absolute top-[-40px] right-2 w-[72px] cursor-pointer uppercase md:hidden;
   }
-
+  .toggle-menu .more-menu-icon{
+    @apply grid gap-[3px];
+  }
+  .header .menu-wrapper .toggle-menu .menu-icon{
+    @apply flex w-6 h-[3px] bg-[rgba(10,124,62,0.5)] transition-all duration-300 ease-in-out;
+  }
+  .header .menu-wrapper.active .toggle-menu .menu-icon.middle{
+    @apply hidden;
+  }
+.header .menu-wrapper.active .toggle-menu .menu-icon.first {
+  @apply rotate-45 translate-y-[6px];
+}
+.header .menu-wrapper.active .toggle-menu .menu-icon.last {
+  @apply -rotate-45 -translate-y-[6px];
+}
 
 }
