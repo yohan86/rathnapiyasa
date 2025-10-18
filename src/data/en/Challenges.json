@@ -1,21 +1,22 @@
 {
     "challenges":{
-        "title": "Challenges We Aim to Address",
+        "titleOne": "Challenges",
+        "titleTwo": "We Aim to Address",
         "list":[
             {
                 "icon": "home.png",
                 "label" : "Independent Living"
             },
             {
-                "icon": "home.png",
+                "icon": "employment.png",
                 "label" : "Employment"
             },
             {
-                "icon": "home.png",
+                "icon": "social.png",
                 "label" : "Social Participation"
             },
             {
-                "icon": "home.png",
+                "icon": "transition.png",
                 "label" : "Transition Planning"
             },
             {
@@ -23,9 +24,18 @@
                 "label" : "Family Support"
             },
             {
-                "icon": "home.png",
+                "icon": "community.png",
                 "label" : "Community Awareness and Inclusion"
             }
+        ],
+        "introTitle": "Overarching goal",
+        "challangesIntro": "To empower young adults with Down Syndrome and intellectual disabilities to live moreindependently and participate fully in society",
+        "objectives":[
+            {"objintro": "To enhance access to learning, skill development and career guidance opportunities for young adults with Down Syndrome and intellectual disabilities."},
+            {"objintro": "To promote social inclusion and equal participation of young adults with Down Syndrome and intellectual disabilities in recreational and social activities."},
+            {"objintro": "To provide specialized healthcare services and therapies to address the specific needs of young adults with Down Syndrome and intellectual disabilities."},
+            {"objintro": "To offer support and guidance to parents and caregivers of young adults with Down Syndrome and intellectual disabilities."},
+            {"objintro": "To raise awareness and advocate for the rights of young adults with Down Syndrome and intellectual disabilities in the broader community."}
         ]
     }
 }

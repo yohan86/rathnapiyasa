@@ -2,7 +2,7 @@
 
 @theme{
   --color-primary:#0a7c3e;
-
+  --color-darkyellow:#f7ff01;
   --color-green: #26df81;
 }
 body {
@@ -14,19 +14,14 @@ body {
 p,li{
   line-height:1.4;
 }
-
-.header nav a{
-  @apply text-[#0a7c3e];
-  padding:2px 10px 5px;
-}
-.header nav a:hover,
-.header nav a.active{
-  @apply text-[#fff] bg-[#0a7c3e] rounded-[20px];
+ul{
+  @apply pl-[18px];
+  list-style-type: disc;
 }
 
 .slider .image-blk{
   @apply block relative rounded-[20px] z-2 ;
-  background-image:url("./images/image1.jpg");
+  background-image:url("/images/image1.jpg");
   background-size: cover;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 
@@ -41,7 +36,7 @@ p,li{
   }
 }
 .image-border{
-  @apply   relative block w-[100%] h-[110%] bg-green/70 mt-[-452px] z-1;
+  @apply   relative block w-[100%] h-[110%] bg-green/70 mt-[-209px] md:mt-[-452px] z-1;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 .button-wrapper .button{
@@ -56,22 +51,67 @@ p,li{
   @apply bg-[#dbb10c];
 }
 
+/*header menu*/
+.header nav a{
+  @apply text-white md:text-[#0a7c3e];
+  padding:3px 10px 5px;
+}
+.header nav a:hover,
+.header nav a.active{
+  @apply text-[#fff] bg-[#0a7c3e] rounded-[20px];
+}
+.header .menu-wrapper .main-menu{
+  @apply  flex flex-col md:flex-row gap-5;
+}
+.header .menu-wrapper .toggle-menu{
+  @apply md:hidden;
+}
 
 /*About*/
 .info-box-wrapper .info-box{
-  @apply  relative flex flex-col w-[150px] h-[170px] px-5  items-center rounded-[15px] text-center;
+  @apply  relative flex flex-row w-[150px] h-[170px] px-2 md:px-5 items-center rounded-[15px] justify-center text-center;
   background-color:rgb(255 255 255/ 20%);
   backdrop-filter: blur(6px);
   box-shadow: 0px 3px 11px #c3c2b6;
 }
 .info-box-wrapper .info-box h4{
-  @apply  text-primary mt-15 font-[600];
+  @apply  text-primary m-0 mt-[31px] md:mt-12 font-[600];
 }
-.info-box-wrapper .info-box {
-}
+
 .about-sec-imgblk{
   background-image: url("/images/face.jpg");
   background-size: cover;
   border-radius:0 30% 0 30%;
   box-shadow:1px 16px 33px #78770b;
+}
+
+/*Challenges*/
+.challenges-intro{
+  background:rgba(255 255 255/ 30%);
+  backdrop-filter: blur(6px);
+  box-shadow: 0px 3px 11px #393834;
+}
+.leef-bg{
+  background-image:url("/images/patterns/leef-bg.png");
+  @apply absolute w-[100px] h-[85px] md:w-[200px] md:h-[150px] bg-no-repeat bg-size-[100%_auto] opacity-50 z-[-1];
+}
+
+@media (max-width: 767px) {
+  /*mobile*/
+  .header .menu-wrapper{
+    @apply absolute w-full left-0 top-[82px] z-10;
+  }
+  .header .menu-wrapper .main-menu{
+    @apply  w-full max-h-0 overflow-hidden opacity-0 p-[15px] bg-[#1dd189] gap-3;
+      transition: all 1s;
+  }
+  .header .menu-wrapper.active .main-menu{
+    @apply  max-h-[400px] opacity-100;
+
+  }
+  .header .menu-wrapper .toggle-menu{
+    @apply flex flex-row absolute top-[-40px] right-2 w-[72px]  cursor-pointer uppercase md:hidden;
+  }
+
+
 }
